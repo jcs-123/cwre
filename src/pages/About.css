@@ -1,0 +1,584 @@
+.about-container {
+  width: 90%;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .about-header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.about-image {
+  width: 500px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.about-text-block {
+  flex: 1;
+}
+
+.about-title {
+  color: #0076ba;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-text-block p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 17px;
+  margin-right: 100px;
+}
+
+/* Vision & Mission */
+.vision-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .vision-mission {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.vision-box,
+.mission-box {
+  background-color: #d3d3d3;
+  padding: 20px;
+  flex: 1;
+}
+
+.vision-box {
+  margin-right: 10px;
+}
+
+.mission-box {
+  margin-left: 10px;
+}
+
+.box-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Objectives */
+.objectives-section {
+  margin-top: 40px;
+}
+
+.objectives-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.objectives-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.objectives-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.objectives-list li::before {
+  content: "►";
+  color: #00aa99;
+  margin-right: 8px;
+}
+
+.objectives-list ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.objectives-list ul li::before {
+  content: "►";
+  color: #00aa99;
+  margin-right: 8px;
+}
+
+/* Committee & Leadership Sections */
+.committee-section {
+  margin-top: 60px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 30px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.committee-header-wrap {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.committee-badge {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.committee-subtext {
+  font-size: 0.95rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+}
+
+.members-grid.justify-center-single .member-card {
+  max-width: 260px;
+  width: 100%;
+}
+
+.member-card {
+  width: 230px;
+  max-width: 250px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 20px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.member-card:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  border-color: #93c5fd;
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.1);
+}
+
+.featured-lead-card {
+  background: #f0f7ff;
+  border: 2px solid #3b82f6;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+}
+
+.member-photo-frame {
+  width: 130px;
+  height: 140px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: #e2e8f0;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.member-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.member-card:hover .member-photo-frame img {
+  transform: scale(1.08);
+}
+
+.dept-tag {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.member-card h5 {
+  margin: 0 0 6px 0;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.member-card p {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+.objectives-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #333;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  /* Adding pointer cursor for better UX */
+}
+
+.objectives-list li:hover {
+  transform: scale(1.02);
+  /* Slightly increase the size of the element */
+  color: #179bc4;
+}
+
+.objectives-list li:hover .objectives-title {
+  color: #0b89d1;
+  /* Change this to your desired color */
+}
+
+.objectives-list li::before {
+  content: "►";
+  color: hsl(173, 59%, 33%);
+  margin-right: 8px;
+}
+
+.objectives-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  /* Default color */
+}
+
+/* Premium Styles for Home Page Sections */
+.home-about-section {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.about-media-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.about-image-premium {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 24px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-media-wrapper:hover .about-image-premium {
+  transform: scale(1.03);
+}
+
+.section-mini-badge {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.about-title-premium {
+  color: #0f172a;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-desc-text {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+/* Vision / Mission Cards */
+.vision-mission-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  position: relative;
+}
+
+.card-pulse-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.card-body-text {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Objectives Box Premium */
+.objectives-premium-wrap {
+  position: relative;
+}
+
+.objectives-box-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.04);
+}
+
+.objectives-title-premium {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.obj-pill-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 14px;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.obj-pill-card:hover {
+  background: #f0f7ff;
+  border-color: rgba(37, 99, 235, 0.15);
+  transform: translateY(-2px);
+}
+
+.obj-bullet-num {
+  background: #2563eb;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.obj-pill-text {
+  font-size: 0.92rem;
+  color: #334155;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Leaders & Members */
+.members-title-premium {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.members-subtitle-premium {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.premium-member-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.member-image-wrap {
+  height: 240px;
+  overflow: hidden;
+}
+
+.member-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.premium-member-card:hover .member-image-wrap img {
+  transform: scale(1.06);
+}
+
+/* Full-view variant — shows entire image without cropping */
+.member-image-wrap--full {
+  height: auto;
+  overflow: visible;
+  background: #f8fafc;
+}
+
+.member-image-wrap--full img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.premium-member-card:hover .member-image-wrap--full img {
+  transform: scale(1.03);
+}
+
+.member-info {
+  padding: 16px;
+}
+
+.member-info h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.member-info p {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Accreditation Section Premium */
+.accreditation-premium-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 80px 0;
+}
+
+.accreditation-card-premium {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  padding: 48px;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.accreditation-card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+
+.accreditation-badge-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.08);
+  color: #10b981;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.accreditation-glow-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+  animation: accreditationGlow 2s infinite;
+}
+
+@keyframes accreditationGlow {
+  0%, 100% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+.accreditation-heading-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.accreditation-line-divider {
+  width: 60px;
+  height: 3px;
+  background: #2563eb;
+  margin: 0 auto 24px auto;
+  border-radius: 2px;
+}
+
+.accreditation-body-paragraph {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #475569;
+  margin: 0;
+}

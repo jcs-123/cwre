@@ -1,0 +1,384 @@
+/* ===========================
+   COLLEGE PAGE – Full Layout
+   =========================== */
+.college-container {
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px 80px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.college-content {
+  background-color: #ffffff;
+  padding: 48px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.college-heading {
+  color: #0056b3;
+  font-weight: 800;
+  margin-bottom: 16px;
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+.college-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* ===========================
+   Document Cards
+   =========================== */
+.college-documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.college-doc-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f8faff;
+  border: 1.5px solid #e0e8f5;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 14px rgba(0, 86, 179, 0.05);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.college-doc-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 86, 179, 0.14);
+  border-color: #0056b3;
+}
+
+.college-doc-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.word-bg { background-color: #dbeafe; }
+.pdf-bg  { background-color: #fee2e2; }
+
+.college-doc-icon {
+  font-size: 1.75rem;
+}
+
+.word-color { color: #1d4ed8; }
+.pdf-color  { color: #dc2626; }
+
+.college-doc-info {
+  flex: 1;
+  text-align: left;
+}
+
+.college-doc-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+}
+
+.college-doc-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.college-doc-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.college-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none !important;
+  border: none;
+}
+
+.college-btn-icon {
+  font-size: 0.9rem;
+}
+
+.college-btn-view {
+  background-color: transparent;
+  color: #0056b3;
+  border: 2px solid #0056b3;
+}
+.college-btn-view:hover {
+  background-color: #eff6ff;
+}
+
+.college-btn-download {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+.college-btn-download:hover {
+  background-color: #003d82;
+  color: #ffffff;
+}
+
+/* ===========================
+   Modal Overlay
+   =========================== */
+.college-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.college-modal-box {
+  background: #ffffff;
+  border-radius: 18px;
+  width: 90vw;
+  max-width: 1100px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* Modal Header */
+.college-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f8faff;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.college-modal-title-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.college-modal-type-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.college-modal-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 2px 0;
+}
+
+.college-modal-subtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.college-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.college-modal-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  transition: background 0.2s ease;
+}
+.college-modal-download-btn:hover {
+  background-color: #003d82;
+  color: #ffffff;
+}
+
+.college-modal-close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  background: #f1f5f9;
+  color: #374151;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+.college-modal-close-btn:hover {
+  background: #e5e7eb;
+}
+
+/* Modal Body */
+.college-modal-body {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* DOCX viewer inside modal */
+.college-modal-viewer {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  background: #f3f3f3;
+  padding: 20px;
+  height: 100%;
+}
+
+.college-viewer-loading,
+.college-viewer-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #666;
+}
+
+.college-spinner-icon {
+  font-size: 2.5rem;
+  color: #0056b3;
+  animation: collegeSpin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes collegeSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.college-error-icon {
+  font-size: 2.5rem;
+  color: #dc2626;
+  margin-bottom: 16px;
+}
+
+/* PDF iframe */
+.college-pdf-iframe {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 640px) {
+  .college-content {
+    padding: 30px 20px;
+  }
+
+  .college-doc-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .college-doc-actions {
+    width: 100%;
+  }
+
+  .college-btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .college-modal-box {
+    width: 98vw;
+    height: 96vh;
+    border-radius: 12px;
+  }
+
+  .college-modal-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .college-modal-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* Video Section Styles */
+.college-video-section {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.college-video-title {
+  color: #0056b3;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.college-video-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.college-video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #000;
+}
+
+.college-video-element {
+  width: 100%;
+  height: auto;
+  display: block;
+}
