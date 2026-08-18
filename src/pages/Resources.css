@@ -231,17 +231,39 @@
   font-weight: 700;
   line-height: 1.5;
   color: #0f172a;
-  margin-bottom: 20px;
-  flex-grow: 1;
+  margin-bottom: 6px;
+}
+
+.resource-card-subtitle {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-bottom: 18px;
+  line-height: 1.45;
 }
 
 .resource-card:hover .resource-card-title {
   color: #2563eb;
 }
 
+.resource-book-thumb {
+  height: 240px;
+}
+
+.resource-book-thumb .resource-image {
+  max-width: 90%;
+  max-height: 96%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
 /* Action button */
 .resource-card-action {
   margin-top: auto;
+}
+
+.resource-dual-actions {
+  display: flex;
+  gap: 10px;
 }
 
 .resource-action-btn {
@@ -250,10 +272,10 @@
   justify-content: center;
   gap: 8px;
   width: 100%;
-  padding: 12px 20px;
+  padding: 11px 16px;
   border-radius: 12px;
   text-align: center;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -271,6 +293,19 @@
   background: #1d4ed8;
   color: #ffffff;
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-view-book {
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.btn-view-book:hover {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
   transform: translateY(-2px);
 }
 

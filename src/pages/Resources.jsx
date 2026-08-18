@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaBook, FaFilePowerpoint, FaNewspaper, FaDownload, FaEye } from 'react-icons/fa';
 
 // ===== IMAGE RESOURCES =====
-import analysisOfWater from '../assets/analysis_of_water_qu_28562.png';
 import bacterialAnalysis from '../assets/img133.png';
 import terrafilTechnology from '../assets/terrafil_technology__67531.png';
 import waterContamination from '../assets/Terrafil_Technology__40528.png';
@@ -20,10 +19,10 @@ import pptWaterTreatment from '../assets/img121.jpg';
 import pptWaterQualityKerala from '../assets/img123.jpg';
 import pptWaterPollutionStandards from '../assets/pollution.png';
 
-// ===== BOOK THUMBNAILS =====
-import jalaBookCover from '../assets/rpt_cover_1.png';
-import parisaraBookCover from '../assets/pub_edition_1.png';
-import jalavumJeevithavumCover from '../assets/pub_edition_2.png';
+// ===== BOOK THUMBNAILS (AUTHENTIC PDF FRONT PAGES) =====
+import bookCoverJalasuraksha from '../assets/book_cover_jalasuraksha.png';
+import bookCoverParisara from '../assets/book_cover_parisara.png';
+import bookCoverJalavumJeevithavum from '../assets/book_cover_jalavum_jeevithavum.png';
 
 import './Resources.css';
 
@@ -31,49 +30,13 @@ import './Resources.css';
 const resources = [
   // ────────── ARTICLES ──────────
   {
-    title: 'Analysis of water quality parameters',
-    img: analysisOfWater,
-    type: 'article',
-    link: '/resource/analysis-of-water',
-  },
-  {
-    title: 'Bacterial analysis of water',
-    img: bacterialAnalysis,
-    type: 'article',
-    link: '/resource/bacterial-analysis',
-  },
-  {
-    title: 'Terrafil technology',
+    title: 'Terrafil Technology',
     img: terrafilTechnology,
     type: 'article',
     link: '/resource/terrafil-technology',
   },
   {
-    title: 'Terrafil Technology for water treatment',
-    img: waterContamination,
-    type: 'article',
-    link: '/resource/water-contamination',
-  },
-  {
-    title: 'Sanitary Survey and Identification of Well Pollution and Analysis of Water Quality Using Kits',
-    img: safeDrinking,
-    type: 'article',
-    link: '/resource/safe-drinking',
-  },
-  {
-    title: 'Rain Water Harvesting',
-    img: simpleWaterTests,
-    type: 'article',
-    link: '/resource/simple-tests',
-  },
-  {
-    title: 'State specific Water quality issues – Remedial measures',
-    img: rainwaterHarvesting,
-    type: 'article',
-    link: '/resource/rainwater-harvesting',
-  },
-  {
-    title: 'Combatting Traditional Water Pollution in Kerala - An overview',
+    title: 'Combating Traditional Water Pollution in Kerala – An Overview',
     img: filterDesigns,
     type: 'article',
     link: '/resource/filter-designs',
@@ -85,50 +48,112 @@ const resources = [
     link: '/resource/disinfection-techniques',
   },
 
-  // ────────── BOOKS & MANUALS (ONLY BOOKS) ──────────
+  // ────────── BOOKS (AUTHENTIC PDF COVERS) ──────────
   {
-    title: 'Jalasuraksha Revised Book',
-    img: jalaBookCover,
+    title: 'ജലസുരക്ഷ നിത്യജീവിതത്തിൽ (Jalasuraksha Nithyajeevithathil)',
+    subtitle: 'Prof. M. G. Cyriac, Dr. Vincy Verghese, Smt. Anna Joseph, Smt. Joffy Joy',
+    img: bookCoverJalasuraksha,
     type: 'book',
     file: '/downloads/Jalasuraksha Revised Book.pdf',
   },
   {
     title: 'പരിസരമലിനീകരണം – പ്രകൃതിയുടെ വിലാപങ്ങൾ (Parisara Malinikaranam)',
-    img: parisaraBookCover,
+    subtitle: 'Prof. M. G. Cyriac',
+    img: bookCoverParisara,
     type: 'book',
     file: '/downloads/parisara_malinikaranam_prakruthiyude_vilapangal.pdf',
   },
   {
-    title: 'ജലവും ജീവിതവും (Jalavum Jeevithavum)',
-    img: jalavumJeevithavumCover,
+    title: 'ജലവും ജീവിതവും (Jalavum Jeevithavum – Water & Life)',
+    subtitle: 'Prof. M. G. Cyriac & Prof. S. Ratheesh',
+    img: bookCoverJalavumJeevithavum,
     type: 'book',
     file: '/downloads/jalavum_jeevithavum.pdf',
   },
 
   // ────────── PRESENTATIONS (PPTS) ──────────
   {
-    title: 'Environmental Planning of Buildings and the Surroundings',
-    img: pptEnvironmentalPlanning,
-    type: 'ppt',
-    file: '/downloads/Environmaental planning of Buildings and the surroundings.pptx',
-  },
-  {
     title: 'Water Treatment Systems & Processes',
+    subtitle: 'Centre for Water Research and Education',
     img: pptWaterTreatment,
     type: 'ppt',
     file: '/downloads/water treatmnet.pptx',
   },
   {
+    title: 'Environmental Planning of Buildings and the Surroundings',
+    subtitle: 'Centre for Water Research and Education',
+    img: pptEnvironmentalPlanning,
+    type: 'ppt',
+    file: '/downloads/Environmaental planning of Buildings and the surroundings.pptx',
+  },
+  {
     title: 'Water Quality Problems in Kerala State',
+    subtitle: 'Centre for Water Research and Education',
     img: pptWaterQualityKerala,
     type: 'ppt',
     file: '/downloads/Water quality problems in Kerala StatEnglish  remodelled copy dt 7.1.2026.pptx',
   },
   {
     title: 'Water Pollution and Water Quality Standards',
+    subtitle: 'Centre for Water Research and Education',
     img: pptWaterPollutionStandards,
     type: 'ppt',
     file: '/downloads/water pollution and water quality standards.pptx',
+  },
+  {
+    title: 'Bacterial Analysis of Water',
+    subtitle: 'Centre for Water Research and Education',
+    img: bacterialAnalysis,
+    type: 'ppt',
+    file: '/downloads/bacterial-analysis.ppt',
+  },
+  {
+    slNo: 7,
+    title: 'Terrafil Technology for Water Treatment',
+    subtitle: 'Centre for Water Research and Education',
+    img: waterContamination,
+    type: 'ppt',
+    file: '/downloads/Terrafil_Technology__40528.pptx',
+  },
+  {
+    slNo: 8,
+    title: 'Sanitary Survey',
+    subtitle: 'Centre for Water Research and Education',
+    img: safeDrinking,
+    type: 'ppt',
+    file: '/downloads/Sanitary_Survey_and__53216.pptx',
+  },
+  {
+    slNo: 9,
+    title: 'Rain Water Harvesting',
+    subtitle: 'Centre for Water Research and Education',
+    img: simpleWaterTests,
+    type: 'ppt',
+    file: '/downloads/Rain_water_Harvestin_83606.pptx',
+  },
+  {
+    slNo: 10,
+    title: 'State Specific Water Quality Issues and Remedial Measures',
+    subtitle: 'Centre for Water Research and Education',
+    img: rainwaterHarvesting,
+    type: 'ppt',
+    file: '/downloads/State_specific_Water_60654.pptx',
+  },
+  {
+    slNo: 11,
+    title: 'Water Treatment Plant',
+    subtitle: 'Centre for Water Research and Education',
+    img: pptWaterTreatment,
+    type: 'ppt',
+    file: '/downloads/water  treatment plant ppt.ppt',
+  },
+  {
+    slNo: 12,
+    title: 'Conservation of Traditional Water Sources of Kerala',
+    subtitle: 'Centre for Water Research and Education',
+    img: filterDesigns,
+    type: 'ppt',
+    file: '/downloads/CONSERVATION OF TRADITIONAL WATER SOURCES OF KERALA.pptx',
   },
 ];
 
@@ -147,7 +172,7 @@ function Resources() {
           <h1 className="resources-title">Resources</h1>
           <div className="resources-title-underline"></div>
           <p className="resources-subtitle">
-            Explore our curated collection of scientific articles, reference books &amp; study manuals, and educational PowerPoint presentations.
+            Explore our curated collection of scientific articles, reference books, and educational PowerPoint presentations.
           </p>
         </div>
 
@@ -182,7 +207,7 @@ function Resources() {
         <div className="resources-category-heading-bar">
           <h2 className="resources-current-category-title">
             {activeTab === 'article' && 'Articles & Guidelines'}
-            {activeTab === 'book' && 'Books & Reference Manuals'}
+            {activeTab === 'book' && 'Authored Reference Books'}
             {activeTab === 'ppt' && 'PowerPoint Presentations (PPTs)'}
           </h2>
           <span className="resources-item-count">
@@ -207,7 +232,7 @@ function Resources() {
                 className={`resource-card card-type-${item.type}`}
               >
                 {/* Thumbnail & Badge */}
-                <div className="resource-img-wrap">
+                <div className={`resource-img-wrap ${item.type === 'book' ? 'resource-book-thumb' : ''}`}>
                   <img src={item.img} alt={item.title} className="resource-image" />
                   <span className={`card-type-badge badge-${item.type}`}>
                     {item.type === 'article' && 'Article'}
@@ -216,18 +241,43 @@ function Resources() {
                   </span>
                 </div>
 
-                {/* Title */}
+                {/* Title & Subtitle */}
                 <h3 className="resource-card-title">{item.title}</h3>
+                {item.subtitle && (
+                  <p className="resource-card-subtitle">{item.subtitle}</p>
+                )}
 
-                {/* Action Button */}
+                {/* Action Buttons */}
                 <div className="resource-card-action">
                   {item.type === 'article' ? (
                     <Link to={item.link} className="resource-action-btn btn-read-more">
                       <FaEye /> Read Article
                     </Link>
+                  ) : item.type === 'book' ? (
+                    <div className="resource-dual-actions">
+                      <a
+                        href={item.file}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="resource-action-btn btn-view-book"
+                      >
+                        <FaEye /> View PDF
+                      </a>
+                      <a
+                        href={item.file}
+                        download
+                        className="resource-action-btn btn-download-book"
+                      >
+                        <FaDownload /> Download
+                      </a>
+                    </div>
                   ) : (
-                    <a href={item.file} download className={`resource-action-btn btn-download-${item.type}`}>
-                      <FaDownload /> Download {item.type === 'book' ? 'Book / Manual' : 'PPT'}
+                    <a
+                      href={item.file}
+                      download
+                      className="resource-action-btn btn-download-ppt"
+                    >
+                      <FaDownload /> Download PPT
                     </a>
                   )}
                 </div>

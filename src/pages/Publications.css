@@ -87,27 +87,88 @@
   line-height: 1.65;
 }
 
-/* ─── Section header ─── */
-.pub-section-title {
-  font-size: 1.35rem;
+/* ─── Filter Navigation ─── */
+.pub-filter-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.pub-filter-btn {
+  background: #ffffff;
+  color: #475569;
+  border: 1.5px solid #e2e8f0;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
   font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.pub-filter-btn:hover {
   color: #0f172a;
-  margin-bottom: 28px;
+  border-color: #cbd5e1;
+  background: #f8fafc;
+  transform: translateY(-2px);
+}
+
+.pub-filter-btn.active {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ─── Category Bar & Section Header ─── */
+.pub-category-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pub-section-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.pub-count-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  padding: 4px 14px;
+  border-radius: 20px;
 }
 
 .pub-section-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   background: rgba(37, 99, 235, 0.08);
   color: #2563eb;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* ─── Publication Cards Grid ─── */
@@ -331,8 +392,22 @@
 .pub-card-subtitle {
   font-size: 0.82rem;
   color: #64748b;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   line-height: 1.5;
+}
+
+.pub-card-author {
+  font-size: 0.78rem;
+  color: #475569;
+  margin: 0 0 6px 0;
+  line-height: 1.45;
+}
+
+.pub-card-edition-text {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0 0 16px 0;
+  line-height: 1.45;
 }
 
 /* Action buttons */
