@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaBook, FaFilePowerpoint, FaNewspaper, FaDownload, FaEye } from 'react-icons/fa';
 
 // ===== IMAGE RESOURCES =====
+import analysisOfWater from '../assets/analysis_of_water_qu_28562.png';
 import bacterialAnalysis from '../assets/img133.png';
 import terrafilTechnology from '../assets/terrafil_technology__67531.png';
 import waterContamination from '../assets/Terrafil_Technology__40528.png';
@@ -11,7 +12,6 @@ import safeDrinking from '../assets/Sanitary_Survey_and__53216.png';
 import simpleWaterTests from '../assets/Rain_water_Harvestin_83606.jpg';
 import rainwaterHarvesting from '../assets/State_specific_Water_60654.jpg';
 import filterDesigns from '../assets/Combatting_Tradition_6993.png';
-import disinfectionTechniques from '../assets/Managing_Water_Quali_77112.png';
 
 // ===== PPT THUMBNAILS =====
 import pptEnvironmentalPlanning from '../assets/img111.jpg';
@@ -34,18 +34,6 @@ const resources = [
     img: terrafilTechnology,
     type: 'article',
     link: '/resource/terrafil-technology',
-  },
-  {
-    title: 'Combating Traditional Water Pollution in Kerala – An Overview',
-    img: filterDesigns,
-    type: 'article',
-    link: '/resource/filter-designs',
-  },
-  {
-    title: 'Managing Water Quality in the Traditional Water Sources of Kerala',
-    img: disinfectionTechniques,
-    type: 'article',
-    link: '/resource/disinfection-techniques',
   },
 
   // ────────── BOOKS (AUTHENTIC PDF COVERS) ──────────
@@ -101,6 +89,13 @@ const resources = [
     file: '/downloads/water pollution and water quality standards.pptx',
   },
   {
+    title: 'Analysis of Water Quality Parameters',
+    subtitle: 'Centre for Water Research and Education',
+    img: analysisOfWater,
+    type: 'ppt',
+    file: '/downloads/Analysisi of water qualty parametrs (1).ppt',
+  },
+  {
     title: 'Bacterial Analysis of Water',
     subtitle: 'Centre for Water Research and Education',
     img: bacterialAnalysis,
@@ -108,7 +103,6 @@ const resources = [
     file: '/downloads/bacterial-analysis.ppt',
   },
   {
-    slNo: 7,
     title: 'Terrafil Technology for Water Treatment',
     subtitle: 'Centre for Water Research and Education',
     img: waterContamination,
@@ -116,7 +110,6 @@ const resources = [
     file: '/downloads/Terrafil_Technology__40528.pptx',
   },
   {
-    slNo: 8,
     title: 'Sanitary Survey',
     subtitle: 'Centre for Water Research and Education',
     img: safeDrinking,
