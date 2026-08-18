@@ -336,6 +336,143 @@
 }
 
 /* ============================================================
+   POWERPOINT PRESENTATIONS — Table Document Layout
+   ============================================================ */
+
+.resources-ppt-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1.5px solid #374151;
+  margin-top: 15px;
+}
+
+.resources-ppt-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  font-family: inherit;
+}
+
+/* Headers */
+.resources-ppt-table th {
+  border: 1px solid #4b5563;
+  padding: 14px 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111827;
+  background: #f8fafc;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
+
+.resources-ppt-table .col-th-sl {
+  width: 70px;
+  text-align: center !important;
+}
+
+.resources-ppt-table .col-th-name {
+  width: 45%;
+}
+
+.resources-ppt-table .col-th-remarks {
+  width: 40%;
+}
+
+.resources-ppt-table .col-th-action {
+  width: 15%;
+  text-align: center;
+}
+
+/* Rows & Cells */
+.resources-ppt-row {
+  transition: background-color 0.15s ease;
+}
+
+.resources-ppt-row:hover {
+  background-color: #f8fafc;
+}
+
+.resources-ppt-table td {
+  border: 1px solid #4b5563;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: #1f2937;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.resources-ppt-table .col-td-sl {
+  text-align: center;
+  font-weight: 700;
+  color: #374151;
+}
+
+.resources-ppt-table .col-td-name {
+  text-align: left;
+}
+
+.resources-ppt-table .col-td-remarks {
+  text-align: left;
+  color: #4b5563;
+  font-size: 0.92rem;
+}
+
+.resources-ppt-table .col-td-action {
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* PPT Clickable Link */
+.ppt-name-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.45;
+  transition: color 0.15s ease;
+}
+
+.ppt-name-link:hover {
+  color: #d97706;
+  text-decoration: underline;
+}
+
+.ppt-table-icon {
+  color: #ea580c;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+/* Download Button inside Table */
+.ppt-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ea580c;
+  border: 1px solid #c2410c;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(234, 88, 12, 0.2);
+}
+
+.ppt-download-btn:hover {
+  background: #c2410c;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(234, 88, 12, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
@@ -353,5 +490,21 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .resources-ppt-table th,
+  .resources-ppt-table td {
+    padding: 8px 10px;
+    font-size: 0.86rem;
+  }
+  .resources-ppt-table .col-th-sl,
+  .resources-ppt-table .col-td-sl {
+    width: 45px;
+  }
+  .ppt-download-btn span {
+    display: none;
+  }
+  .ppt-download-btn {
+    padding: 6px 10px;
+  }
 }
+
 
