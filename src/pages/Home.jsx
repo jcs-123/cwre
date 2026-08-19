@@ -2,6 +2,10 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import './Home.css';
 import heroBg from '../assets/hero_water_drop.png';
 import soilImage from '../assets/soil.jpg';
+import img1 from '../assets/1.png';
+import img2 from '../assets/2.png';
+import img3 from '../assets/3.png';
+import img4 from '../assets/4.png';
 import Slider from 'react-slick';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaMicroscope, FaHandsWash, FaUsers, FaTint } from 'react-icons/fa';
@@ -62,6 +66,7 @@ const homeDeptCoordinators = [
   { img: sibinJohnyImg, dept: "MRE", name: "SIBIN JOHNY", role: "Department Coordinator (MRE)" }
 ];
 function Home() {
+  const [selectedGalleryImg, setSelectedGalleryImg] = useState(null);
   const canvasRef = useRef(null);
   const heroRef = useRef(null);
   const rippleDataRef = useRef({
@@ -348,6 +353,144 @@ function Home() {
         </div>
       </div>
 
+      {/* CWRE & UBA GOI Association Section */}
+      <section className="cwre-uba-section container-fluid px-lg-5 px-3 py-5 position-relative overflow-hidden">
+        {/* Ambient background glow effects */}
+        <div className="uba-bg-blob uba-bg-blob-1" aria-hidden="true" />
+        <div className="uba-bg-blob uba-bg-blob-2" aria-hidden="true" />
+
+        <div className="container-fluid position-relative" style={{ zIndex: 2 }}>
+          <div className="row align-items-center g-5">
+            {/* Left Content Column */}
+            <motion.div
+              className="col-xl-6 col-lg-6 uba-text-col"
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              viewport={{ once: true, margin: '-50px' }}
+            >
+              <div className="uba-badge-wrapper mb-3">
+                <span className="uba-pill-badge">
+                  <span className="badge-pulse-dot" />
+                  CWRE &amp; UBA (GOI) Association
+                </span>
+              </div>
+
+              <motion.h2
+                className="uba-section-title mb-3"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                Centre for Water Research and Education <span className="uba-title-highlight">(CWRE)</span> &amp; Unnat Bharat Abhiyan <span className="uba-title-highlight">(UBA)</span>
+              </motion.h2>
+
+              <div className="uba-title-accent-bar mb-4" />
+
+              <motion.div
+                className="uba-section-text"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <p className="uba-lead-text">
+                  <strong>Centre for Water Research and Education</strong> is a subsidiary of the Civil Engineering Department actively dedicated to resolving water quality challenges and executing sustainable remediation practices.
+                </p>
+                <p>
+                  In Kerala, there are over <strong>70 lakhs of wells</strong> concentrated within constrained land plots alongside household necessities such as septic tanks, leach pits, and wastewater/solid waste disposal systems. This frequently causes ingression of pollutants into the ground and severe well-water contamination. Because remediation methods are often not institutionalized, communities struggle to find practical remedies. To resolve this, we pioneered and actively implement comprehensive <em>environmental planning for buildings and surroundings</em>.
+                </p>
+                <p>
+                  We maintain a <strong>government-approved commercial laboratory</strong> for water sample testing and provide <strong>free-of-cost source inspections</strong> to counsel the public on proper upkeep. CWRE leads extensive IEC (Information, Education &amp; Communication) initiatives—conducting specialized trainings, authoring books &amp; research articles, and organizing state competitions. Working in close synergy with <strong>Unnat Bharat Abhiyan (GOI)</strong>, our unified association fosters sustainable water security.
+                </p>
+              </motion.div>
+
+              {/* 4 Feature Badges Grid */}
+              <div className="row g-3 pt-3">
+                <div className="col-sm-6">
+                  <motion.div
+                    className="uba-feature-pill"
+                    whileHover={{ y: -3, scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="uba-feat-icon lab-icon">🧪</div>
+                    <div>
+                      <h6 className="feat-title">Govt. Approved Lab</h6>
+                      <span className="feat-sub">Testing &amp; source inspection</span>
+                    </div>
+                  </motion.div>
+                </div>
+                <div className="col-sm-6">
+                  <motion.div
+                    className="uba-feature-pill"
+                    whileHover={{ y: -3, scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="uba-feat-icon env-icon">🏡</div>
+                    <div>
+                      <h6 className="feat-title">Environmental Planning</h6>
+                      <span className="feat-sub">Premises &amp; well remediation</span>
+                    </div>
+                  </motion.div>
+                </div>
+                <div className="col-sm-6">
+                  <motion.div
+                    className="uba-feature-pill"
+                    whileHover={{ y: -3, scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="uba-feat-icon iec-icon">📚</div>
+                    <div>
+                      <h6 className="feat-title">IEC Activities</h6>
+                      <span className="feat-sub">Workshops, books &amp; contests</span>
+                    </div>
+                  </motion.div>
+                </div>
+                <div className="col-sm-6">
+                  <motion.div
+                    className="uba-feature-pill"
+                    whileHover={{ y: -3, scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="uba-feat-icon uba-icon">🇮🇳</div>
+                    <div>
+                      <h6 className="feat-title">UBA (GOI) Alignment</h6>
+                      <span className="feat-sub">Unified community outreach</span>
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right Images Grid Column */}
+            <motion.div
+              className="col-xl-6 col-lg-6"
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              viewport={{ once: true, margin: '-50px' }}
+            >
+              <div className="uba-gallery-grid">
+                {[img1, img2, img3, img4].map((image, idx) => (
+                  <motion.div
+                    key={idx}
+                    className="gallery-item-card"
+                    whileHover={{ y: -6, scale: 1.02 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                    onClick={() => setSelectedGalleryImg(image)}
+                  >
+                    <div className="gallery-img-wrapper">
+                      <img src={image} alt={`CWRE & UBA ${idx + 1}`} className="gallery-img" loading="lazy" />
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content Section */}
       <div className="main-content-section container-fluid px-5">
         <div className="row align-items-center g-4 py-5">
@@ -449,7 +592,7 @@ function Home() {
                 >
                   <h5>Water Quality Changes</h5>
                   <ul className="changes-list">
-                    <li><span className="icon-circle ph-icon">pH</span> <span className="list-text">pH decreases</span> <span className="arrow down">↓</span></li>
+                    <li><span className="icon-circle ph-icon">pH</span> <span className="list-text">pH increases</span> <span className="arrow up">↑</span></li>
                     <li><span className="icon-circle hardness-icon">H</span> <span className="list-text">Hardness increases</span> <span className="arrow up">↑</span></li>
                     <li><span className="icon-circle ca-icon" style={{ fontSize: '0.6rem' }}>Ca/Mg</span> <span className="list-text">Calcium & Magnesium<br />increase</span> <span className="arrow up">↑</span></li>
                     <li><span className="icon-circle hco3-icon" style={{ fontSize: '0.55rem' }}>HCO3</span> <span className="list-text">Bicarbonate increases</span> <span className="arrow up">↑</span></li>
@@ -733,6 +876,43 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* Gallery Lightbox Modal */}
+      <AnimatePresence>
+        {selectedGalleryImg && (
+          <motion.div
+            className="uba-modal-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedGalleryImg(null)}
+          >
+            <motion.div
+              className="uba-modal-content"
+              initial={{ scale: 0.85, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.85, opacity: 0, y: 20 }}
+              transition={{ type: 'spring', stiffness: 350, damping: 25 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="uba-modal-close-btn"
+                onClick={() => setSelectedGalleryImg(null)}
+                aria-label="Close"
+              >
+                ✕
+              </button>
+              <div className="uba-modal-img-container">
+                <img
+                  src={selectedGalleryImg}
+                  alt="CWRE & UBA Preview"
+                  className="uba-modal-img"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </div>
   );
