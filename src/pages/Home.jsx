@@ -6,9 +6,8 @@ import img1 from '../assets/1.png';
 import img2 from '../assets/2.png';
 import img3 from '../assets/3.png';
 import img4 from '../assets/4.png';
-import Slider from 'react-slick';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaMicroscope, FaHandsWash, FaUsers, FaTint } from 'react-icons/fa';
+import { FaMicroscope, FaHandsWash, FaUsers, FaTint, FaEye, FaBullseye } from 'react-icons/fa';
 
 import waterImg from '../assets/water.jpg';
 import joseKonikkara from '../assets/jose_konikkara.jpg';
@@ -33,6 +32,7 @@ import frAjeeshImg from '../assets/media_1786702106166.jpg';
 import drXaviourImg from '../assets/media_1786702116404.jpg';
 import drAlwynImg from '../assets/media_1786700270262.jpg';
 import sibinJohnyImg from '../assets/media_1786702289359.jpg';
+import suhasNairImg from '../assets/suhas_nair.jpg';
 import './About.css';
 
 // Core Committee Data
@@ -52,7 +52,8 @@ const homeLeadCoordinator = [
 
 const homeAsstCoordinators = [
   { img: annaImg, name: "Anna Joseph", role: "Asst. Coordinator (Civil Engineering)" },
-  { img: sibinImg, name: "Dr. Thomas", role: "Asst. Coordinator (Non Civil)" }
+  { img: sibinImg, name: "Dr. Thomas", role: "Asst. Coordinator (Non Civil)" },
+  { img: suhasNairImg, name: "Suhas Nair", role: "Asst. Coordinator, CWRE - UBA Programmes" }
 ];
 
 const homeDeptCoordinators = [
@@ -676,11 +677,15 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -6, boxShadow: '0 12px 30px rgba(59,130,246,0.15)' }}
+                whileHover={{ y: -6, boxShadow: '0 15px 35px rgba(37,99,235,0.12)' }}
               >
-                <div className="card-pulse-icon">👁️</div>
+                <div className="card-pulse-icon vision-icon-bg">
+                  <FaEye />
+                </div>
                 <h3 className="card-heading">Vision</h3>
-                <p className="card-body-text">To provide efficient and affordable service...</p>
+                <p className="card-body-text">
+                  To create a healthier and safer society by ensuring access to clean, safe and sustainable water through reliable water-quality assessment and effective remediation measures.
+                </p>
               </motion.div>
             </div>
             <div className="col-md-6">
@@ -690,11 +695,15 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -6, boxShadow: '0 12px 30px rgba(59,130,246,0.15)' }}
+                whileHover={{ y: -6, boxShadow: '0 15px 35px rgba(22,163,74,0.12)' }}
               >
-                <div className="card-pulse-icon">🚀</div>
+                <div className="card-pulse-icon mission-icon-bg">
+                  <FaBullseye />
+                </div>
                 <h3 className="card-heading">Mission</h3>
-                <p className="card-body-text">To establish a centre of excellence...</p>
+                <p className="card-body-text">
+                  To provide accurate, reliable and affordable water-quality testing services; identify sources and causes of water-quality problems; provide scientific guidance for appropriate remediation; and support communities, institutions and individuals in protecting and improving their water resources.
+                </p>
               </motion.div>
             </div>
           </div>
@@ -711,18 +720,20 @@ function Home() {
               <h3 className="objectives-title-premium">Objectives</h3>
               <div className="row g-4 mt-2">
                 {[
-                  "Providing consultancy service to Water Boards...",
-                  "Testing water samples...",
-                  "Training engineers and supervisors...",
-                  "Providing training to faculty and students...",
-                  "Dissemination of knowledge through publications."
+                  "Analysis of water samples across all categories of people for physical, chemical, and biological parameters.",
+                  "Identifying the real pollution problem faced by the customer based on a detailed study of test results and peripheral environmental factors.",
+                  "Inspection of water sources free of cost for providing scientific guidance on water quality and source upkeep.",
+                  "Training all categories of people including water treatment equipment personnel, teachers, government department health inspectors, and the general public on water quality and sanitation.",
+                  "Undertaking various activities for dissemination of knowledge in water quality and sanitation via IEC (Information, Education, and Communication) through articles in leading newspapers, printed books, leaflets, and trainings.",
+                  "Development and propagation of the concept of Environmental Planning of buildings and surroundings for health, water quality, sanitation, and living comfort.",
+                  "Ultimately striving for the institutionalization of water quality and sanitation measures in the Kerala context to benefit the common people."
                 ].map((obj, i) => (
                   <motion.div
-                    className="col-md-6 col-lg-4"
+                    className={i === 6 ? "col-md-12 col-lg-8 mx-auto" : "col-md-6 col-lg-4"}
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.1 }}
+                    transition={{ duration: 0.5, delay: i * 0.08 }}
                     viewport={{ once: true }}
                   >
                     <div className="obj-pill-card">

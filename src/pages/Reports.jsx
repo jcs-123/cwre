@@ -8,7 +8,7 @@ const programmesAndReports = [
     slNo: 1,
     name: 'Water Quality and sanitation awareness competition for students of Jyothi Engineering College 2024-25',
     date: '14.2.2025',
-    file: '/downloads/All kerala water quality and sanitation competetion for diploma , graduation and post graduation level (1).pdf',
+    file: '/downloads/water quality awareness competetion.pdf',
   },
   {
     slNo: 2,

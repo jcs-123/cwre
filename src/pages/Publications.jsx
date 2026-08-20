@@ -65,6 +65,18 @@ const allPublications = [
     file: '/downloads/4ആരോഗ്യവും പരിസ്ഥിതിയും.pdf',
     img: pubCover4,
   },
+  {
+    id: 'periodical-5',
+    category: 'periodical',
+    badge: 'Journal Book',
+    edition: 'Special Journal Edition',
+    title: 'പരിസ്ഥിതിയും ആരോഗ്യവും (ജേർണൽ ബുക്ക്)',
+    titleEn: 'Environment & Health — Journal Book Compilation',
+    author: 'Editorial Board, CWRE & UBA',
+    publisher: 'Centre for Water Research & Education, Jyothi Engineering College',
+    file: '/downloads/Journal Book.pdf',
+    img: pubCover1,
+  },
 
   // ────────── 2. AUTHORED REFERENCE BOOKS ──────────
   {

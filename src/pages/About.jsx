@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaEye, FaBullseye } from 'react-icons/fa';
 import './About.css';
 import waterImg from '../assets/water.jpg';
 
@@ -26,6 +27,7 @@ import frAjeeshImg from '../assets/media_1786702106166.jpg';
 import drXaviourImg from '../assets/media_1786702116404.jpg';
 import drAlwynImg from '../assets/media_1786700270262.jpg';
 import sibinJohnyImg from '../assets/media_1786702289359.jpg';
+import suhasNairImg from '../assets/suhas_nair.jpg';
 
 // Core Committee Data
 const coreCommittee = [
@@ -46,7 +48,8 @@ const leadCoordinator = [
 // Asst. Coordinators (College Level) Data
 const asstCoordinators = [
   { img: annaImg, name: "Anna Joseph", role: "Asst. Coordinator (Civil Engineering)" },
-  { img: sibinImg, name: "Dr. Thomas", role: "Asst. Coordinator (Non Civil)" }
+  { img: sibinImg, name: "Dr. Thomas", role: "Asst. Coordinator (Non Civil)" },
+  { img: suhasNairImg, name: "Suhas Nair", role: "Asst. Coordinator, CWRE - UBA Programmes" }
 ];
 
 // Department Coordinators Data
@@ -97,15 +100,21 @@ function About() {
         viewport={{ once: true }}
       >
         <div className="vision-box">
+          <div className="card-pulse-icon vision-icon-bg">
+            <FaEye />
+          </div>
           <h3 className="box-title">Vision</h3>
           <p>
-            To provide efficient, affordable, and sustainable water testing and research services, empowering communities with clean, potable water.
+            To create a healthier and safer society by ensuring access to clean, safe and sustainable water through reliable water-quality assessment and effective remediation measures.
           </p>
         </div>
         <div className="mission-box">
+          <div className="card-pulse-icon mission-icon-bg">
+            <FaBullseye />
+          </div>
           <h3 className="box-title">Mission</h3>
           <p>
-            To establish a centre of excellence in water quality analysis, environmental remediation, and community-driven water preservation initiatives.
+            To provide accurate, reliable and affordable water-quality testing services; identify sources and causes of water-quality problems; provide scientific guidance for appropriate remediation; and support communities, institutions and individuals in protecting and improving their water resources.
           </p>
         </div>
       </motion.div>
@@ -120,11 +129,13 @@ function About() {
       >
         <h3 className="objectives-title">Objectives</h3>
         <ul className="objectives-list">
-          <li>Providing consultancy service to Water Boards and governmental/panchayat bodies.</li>
-          <li>Testing water samples with accredited laboratory accuracy.</li>
-          <li>Training engineers, supervisors, and community health inspectors.</li>
-          <li>Providing training to faculty, research scholars, and students.</li>
-          <li>Dissemination of knowledge through research publications, workshops, and manuals.</li>
+          <li>Analysis of water samples across all categories of people for physical, chemical, and biological parameters.</li>
+          <li>Identifying the real pollution problem faced by the customer based on a detailed study of test results and peripheral environmental factors.</li>
+          <li>Inspection of water sources free of cost for providing scientific guidance on water quality and source upkeep.</li>
+          <li>Training all categories of people including water treatment equipment personnel, teachers, government department health inspectors, and the general public on water quality and sanitation.</li>
+          <li>Undertaking various activities for dissemination of knowledge in water quality and sanitation via IEC (Information, Education, and Communication) through articles in leading newspapers, printed books, leaflets, and trainings.</li>
+          <li>Development and propagation of the concept of Environmental Planning of buildings and surroundings for health, water quality, sanitation, and living comfort.</li>
+          <li>Ultimately striving for the institutionalization of water quality and sanitation measures in the Kerala context to benefit the common people.</li>
         </ul>
       </motion.div>
 
