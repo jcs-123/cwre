@@ -166,20 +166,41 @@
 }
 
 .menu-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
   color: #1a3c6d;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.menu-toggle:hover {
+  background: #f1f5f9;
+  color: #0284c7;
+  border-color: #94a3b8;
+}
+
+.header-brand-link {
+  min-width: 0;
+  flex: 1;
 }
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .cwre-title {
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 3.2vw, 1.15rem);
+    line-height: 1.25;
   }
   .cwre-subtitle {
-    font-size: 0.85rem;
+    font-size: clamp(0.72rem, 2.5vw, 0.95rem);
   }
   .cwre-menu {
     display: none;
@@ -194,9 +215,94 @@
   }
 }
 
+@media (max-width: 576px) {
+  .cwre-logo {
+    width: 42px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  .cwre-title {
+    font-size: clamp(0.76rem, 3.4vw, 0.95rem);
+    margin-bottom: 1px;
+  }
+  .cwre-subtitle {
+    font-size: clamp(0.68rem, 2.8vw, 0.82rem);
+  }
+  .cwre-ticker-strip {
+    padding: 6px 0;
+  }
+  .ticker-item-link {
+    font-size: 0.84rem;
+  }
+  .ticker-pipe {
+    margin: 0 20px;
+  }
+  .menu-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 1.05rem;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .cwre-menu a {
     padding: 15px 6px;
     font-size: 0.76rem;
+  }
+}
+
+/* ===== Full-width Horizontal Announcement Ticker Strip ===== */
+.cwre-ticker-strip {
+  background: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #cbd5e1;
+  padding: 8px 0;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: fullTickerScroll 35s linear infinite;
+}
+
+.cwre-ticker-strip:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-item-link {
+  color: #0b4d8c;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: -0.1px;
+  transition: color 0.2s ease;
+}
+
+.ticker-item-link:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+.ticker-pipe {
+  color: #64748b;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 0 35px;
+  user-select: none;
+}
+
+@keyframes fullTickerScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

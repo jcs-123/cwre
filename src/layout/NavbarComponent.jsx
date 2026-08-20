@@ -17,25 +17,29 @@ const NavbarComponent = () => {
             {/* Top Header Section */}
             <div className="cwre-top-header">
                 <Container fluid="lg">
-                    <Row className="align-items-center py-3">
+                    <Row className="align-items-center justify-content-between g-2 py-2 py-md-3">
                         {/* Logo and Titles */}
-                        <Col xs={9} md={7} lg={7} className="d-flex align-items-center">
-                            <Link to="/">
+                        <Col xs={10} sm={9} md={7} lg={7} className="d-flex align-items-center">
+                            <Link to="/" className="d-flex align-items-center text-decoration-none header-brand-link">
                                 <img
                                     src={logo}
                                     alt="JECC Logo"
                                     className="cwre-logo"
                                 />
+                                <div className="cwre-titles">
+                                    <h3 className="cwre-title">Centre for Water Research &amp; Education(CWRE)</h3>
+                                    <h4 className="cwre-subtitle">Jyothi Engineering College</h4>
+                                </div>
                             </Link>
-                            <div className="cwre-titles">
-                                <h3 className="cwre-title">Centre for Water Research & Education(CWRE)</h3>
-                                <h4 className="cwre-subtitle">Jyothi Engineering College</h4>
-                            </div>
                         </Col>
 
                         {/* Mobile Toggle */}
-                        <Col xs={3} className="d-md-none text-end">
-                            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+                        <Col xs={2} sm={3} className="d-md-none text-end d-flex align-items-center justify-content-end">
+                            <button 
+                                className="menu-toggle" 
+                                onClick={() => setMenuOpen(!menuOpen)}
+                                aria-label="Toggle navigation menu"
+                            >
                                 <FaBars />
                             </button>
                         </Col>
@@ -53,6 +57,24 @@ const NavbarComponent = () => {
                         </Col>
                     </Row>
                 </Container>
+            </div>
+
+            {/* Full-width Horizontal Announcement Ticker Strip */}
+            <div className="cwre-ticker-strip">
+                <div className="ticker-track">
+                    <Link to="/plus-one-plus-two" className="ticker-item-link">
+                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Higher Secondary Students (+1, +2 of Kerala Syllabus , CBSE, ICSE)
+                    </Link>
+                    <span className="ticker-pipe">|</span>
+                    <Link to="/plus-one-plus-two" className="ticker-item-link">
+                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Higher Secondary Students (+1, +2 of Kerala Syllabus , CBSE, ICSE)
+                    </Link>
+                    <span className="ticker-pipe">|</span>
+                    <Link to="/plus-one-plus-two" className="ticker-item-link">
+                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Higher Secondary Students (+1, +2 of Kerala Syllabus , CBSE, ICSE)
+                    </Link>
+                    <span className="ticker-pipe">|</span>
+                </div>
             </div>
 
             {/* Navigation Menu Section */}

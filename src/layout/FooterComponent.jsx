@@ -288,32 +288,32 @@ function Footer() {
                             Get In Touch
                         </h4>
                         <ul className="ft-contact-list">
-                            <motion.li whileHover={{ x: 6 }} transition={{ type: 'spring', stiffness: 300 }}>
+                            <motion.li whileHover={{ x: 4 }} transition={{ type: 'spring', stiffness: 300 }}>
                                 <span className="ft-contact-icon-wrap">
                                     <FaMapMarkerAlt />
                                 </span>
-                                <span>
+                                <span className="ft-contact-text">
                                     Jyothi Engineering College, Jyothi Hills,<br />
                                     Cheruthuruthy, Thrissur&nbsp;-&nbsp;678531
                                 </span>
                             </motion.li>
-                            <motion.li whileHover={{ x: 6 }} transition={{ type: 'spring', stiffness: 300 }}>
+                            <motion.li whileHover={{ x: 4 }} transition={{ type: 'spring', stiffness: 300 }}>
                                 <span className="ft-contact-icon-wrap">
                                     <FaPhoneAlt />
                                 </span>
-                                <span>04884 - 274198, 274423</span>
+                                <span className="ft-contact-text">04884 - 274198, 274423</span>
                             </motion.li>
-                            <motion.li whileHover={{ x: 6 }} transition={{ type: 'spring', stiffness: 300 }}>
+                            <motion.li whileHover={{ x: 4 }} transition={{ type: 'spring', stiffness: 300 }}>
                                 <span className="ft-contact-icon-wrap">
                                     <FaFax />
                                 </span>
-                                <span>04884 - 274777</span>
+                                <span className="ft-contact-text">04884 - 274777</span>
                             </motion.li>
-                            <motion.li whileHover={{ x: 6 }} transition={{ type: 'spring', stiffness: 300 }}>
+                            <motion.li whileHover={{ x: 4 }} transition={{ type: 'spring', stiffness: 300 }}>
                                 <span className="ft-contact-icon-wrap">
                                     <FaEnvelope />
                                 </span>
-                                <a href="mailto:cwre@jecc.ac.in" className="ft-link ft-link--inline">
+                                <a href="mailto:cwre@jecc.ac.in" className="ft-contact-text ft-contact-email-link">
                                     cwre@jecc.ac.in
                                 </a>
                             </motion.li>

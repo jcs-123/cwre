@@ -60,9 +60,9 @@ const programmesAndReports = [
   },
   {
     slNo: 10,
-    name: 'One day interactive workshop for the health inspectors of Palakkad and Malappuram districts- Kerala health services Department 2026-27',
+    name: 'One day interactive workshop for the Health Inspectors of Palakkad and Malappuram districts – Kerala Health Services Department 2026-27',
     date: '29.5.2026',
-    file: '/downloads/workshop.pdf',
+    file: '/downloads/Interactive Workshop.pdf',
   },
   {
     slNo: 11,
