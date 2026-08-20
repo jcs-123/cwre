@@ -9,6 +9,7 @@ import pubCover1 from '../assets/pub_cover_1.png';
 import pubCover2 from '../assets/pub_cover_2.png';
 import pubCover3 from '../assets/pub_cover_3.png';
 import pubCover4 from '../assets/pub_cover_4.png';
+import pubCover5 from '../assets/pub_cover_5.png';
 
 // Books
 import bookCoverJalasuraksha from '../assets/book_cover_jalasuraksha.png';
@@ -75,7 +76,7 @@ const allPublications = [
     author: 'Editorial Board, CWRE & UBA',
     publisher: 'Centre for Water Research & Education, Jyothi Engineering College',
     file: '/downloads/Journal Book.pdf',
-    img: pubCover1,
+    img: pubCover5,
   },
 
   // ────────── 2. AUTHORED REFERENCE BOOKS ──────────
