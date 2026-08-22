@@ -27,7 +27,7 @@ const allPublications = [
     titleEn: 'Environment & Health — Issue 1',
     author: 'Editorial Board, CWRE & UBA',
     publisher: 'Centre for Water Research & Education, Jyothi Engineering College',
-    file: '/downloads/1 ആരോഗ്യവും പരിസ്ഥിതിയും.pdf',
+    file: '/downloads/1 Aarogyavum Paristhithiyum.pdf',
     img: pubCover1,
   },
   {
@@ -39,7 +39,7 @@ const allPublications = [
     titleEn: 'Environment & Health — Issue 2',
     author: 'Editorial Board, CWRE & UBA',
     publisher: 'Centre for Water Research & Education, Jyothi Engineering College',
-    file: '/downloads/2ആരോഗ്യവും പരിസ്ഥിതിയും.pdf',
+    file: '/downloads/2 Aarogyavum Paristhithiyum.pdf',
     img: pubCover2,
   },
   {
@@ -51,7 +51,7 @@ const allPublications = [
     titleEn: 'Environment & Health — Issue 3',
     author: 'Editorial Board, CWRE & UBA',
     publisher: 'Centre for Water Research & Education, Jyothi Engineering College',
-    file: '/downloads/3 ആരോഗ്യവും പരിസ്ഥിതിയും.pdf',
+    file: '/downloads/3 Aarogyavum Paristhithiyum.pdf',
     img: pubCover3,
   },
   {
@@ -63,7 +63,7 @@ const allPublications = [
     titleEn: 'Environment & Health — Issue 4',
     author: 'Editorial Board, CWRE & UBA',
     publisher: 'Centre for Water Research & Education, Jyothi Engineering College',
-    file: '/downloads/4ആരോഗ്യവും പരിസ്ഥിതിയും.pdf',
+    file: '/downloads/4 Aarogyavum Paristhithiyum.pdf',
     img: pubCover4,
   },
   {
