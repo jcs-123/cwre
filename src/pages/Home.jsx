@@ -33,6 +33,8 @@ import drXaviourImg from '../assets/media_1786702116404.jpg';
 import drAlwynImg from '../assets/media_1786700270262.jpg';
 import sibinJohnyImg from '../assets/media_1786702289359.jpg';
 import suhasNairImg from '../assets/suhas_nair.jpg';
+import viniImg from '../assets/vini_p.jpg';
+import ignatiousImg from '../assets/ignatious_tf.jpg';
 import './About.css';
 
 // Core Committee Data
@@ -65,6 +67,11 @@ const homeDeptCoordinators = [
   { img: jithinJoyImg, dept: "ECE", name: "JITHIN JOY", role: "Department Coordinator (ECE)" },
   { img: drJithinKJoseImg, dept: "EEE", name: "Dr. JITHIN K JOSE", role: "Department Coordinator (EEE)" },
   { img: sibinJohnyImg, dept: "MRE", name: "SIBIN JOHNY", role: "Department Coordinator (MRE)" }
+];
+
+const homeLabStaff = [
+  { img: viniImg, name: "Vini P", role: "Laboratory Staff" },
+  { img: ignatiousImg, name: "Ignatious T.F", role: "Laboratory Staff" }
 ];
 function Home() {
   const [selectedGalleryImg, setSelectedGalleryImg] = useState(null);
@@ -847,6 +854,33 @@ function Home() {
                   <div className="member-photo-frame">
                     <img src={member.img} alt={member.name} />
                     <span className="dept-tag">{member.dept}</span>
+                  </div>
+                  <h5>{member.name}</h5>
+                  <p>{member.role}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* 5. Laboratory Staff */}
+          <div className="committee-section my-5">
+            <div className="committee-header-wrap">
+              <span className="committee-badge">TECHNICAL EXPERTISE</span>
+              <h3 className="section-title">Laboratory Staff</h3>
+              <p className="committee-subtext">Dedicated technical professionals managing water quality testing, sample analysis, and laboratory upkeep.</p>
+            </div>
+            <div className="members-grid">
+              {homeLabStaff.map((member, index) => (
+                <motion.div
+                  key={index}
+                  className="member-card"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="member-photo-frame">
+                    <img src={member.img} alt={member.name} />
                   </div>
                   <h5>{member.name}</h5>
                   <p>{member.role}</p>
