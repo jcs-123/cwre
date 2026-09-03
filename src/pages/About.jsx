@@ -50,14 +50,14 @@ const leadCoordinator = [
 // Asst. Coordinators (College Level) Data
 const asstCoordinators = [
   { img: annaImg, name: "Anna Joseph", role: "Asst. Coordinator (Civil Engineering)" },
-  { img: sibinImg, name: "Dr. Thomas", role: "Asst. Coordinator (Non Civil)" },
+  { img: sibinImg, name: "Dr. Thomas Joseph", role: "Asst. Coordinator (Non Civil)" },
   { img: suhasNairImg, name: "Suhas Nair", role: "Asst. Coordinator, CWRE - UBA Programmes" }
 ];
 
 // Department Coordinators Data
 const deptCoordinators = [
   { img: leeshmaImg, dept: "AD", name: "LEESHMA", role: "Department Coordinator (AD)" },
-  { img: bindhuImg, dept: "BSH", name: "BINDHU K S", role: "Department Coordinator (BSH)" },
+  { img: bindhuImg, dept: "BSH", name: "BINDU K S", role: "Department Coordinator (BSH)" },
   { img: jeffyImg, dept: "CE", name: "JEFFY JOHNY", role: "Department Coordinator (CE)" },
   { img: ninuImg, dept: "CSE", name: "NINU FRANSIS", role: "Department Coordinator (CSE)" },
   { img: geethuImg, dept: "CY", name: "DR. GEETHU MARY GEORGE", role: "Department Coordinator (CY)" },

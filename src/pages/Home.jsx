@@ -54,13 +54,13 @@ const homeLeadCoordinator = [
 
 const homeAsstCoordinators = [
   { img: annaImg, name: "Anna Joseph", role: "Asst. Coordinator (Civil Engineering)" },
-  { img: sibinImg, name: "Dr. Thomas", role: "Asst. Coordinator (Non Civil)" },
+  { img: sibinImg, name: "Dr. Thomas Joseph", role: "Asst. Coordinator (Non Civil)" },
   { img: suhasNairImg, name: "Suhas Nair", role: "Asst. Coordinator, CWRE - UBA Programmes" }
 ];
 
 const homeDeptCoordinators = [
   { img: leeshmaImg, dept: "AD", name: "LEESHMA", role: "Department Coordinator (AD)" },
-  { img: bindhuImg, dept: "BSH", name: "BINDHU K S", role: "Department Coordinator (BSH)" },
+  { img: bindhuImg, dept: "BSH", name: "BINDU K S", role: "Department Coordinator (BSH)" },
   { img: jeffyImg, dept: "CE", name: "JEFFY JOHNY", role: "Department Coordinator (CE)" },
   { img: ninuImg, dept: "CSE", name: "NINU FRANSIS", role: "Department Coordinator (CSE)" },
   { img: geethuImg, dept: "CY", name: "DR. GEETHU MARY GEORGE", role: "Department Coordinator (CY)" },
@@ -921,6 +921,58 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* Partnership Activities Section */}
+      <div className="partnership-premium-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10 col-xl-8">
+              <motion.div
+                className="partnership-card-premium"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: true }}
+              >
+                <div className="text-center">
+                  <div className="partnership-badge-top">COLLABORATIONS &amp; OUTREACH</div>
+                  <h3 className="partnership-heading-text">Partnership Activities of CWRE</h3>
+                  <div className="partnership-line-divider"></div>
+                </div>
+                <p className="partnership-body-paragraph">
+                  The Centre for Water Research and Education (CWRE) joins hands with various organizations,
+                  both within and outside the institution, to carry out its activities in the water sector.
+                </p>
+                <p className="partnership-body-paragraph">
+                  Unnat Bharat Abhiyan (UBA), a flagship programme of the Government of India, is a key
+                  partner in all CWRE activities. This collaboration is designated as the <strong>CWRE–UBA Association</strong>.
+                </p>
+                <p className="partnership-body-paragraph">
+                  The Indian Society for Technical Education (ISTE) supports CWRE in all its activities,
+                  including providing financial support. The National Service Scheme (NSS) and the Civil
+                  Engineering Association (CEA) also work jointly with CWRE to fulfill its objectives.
+                </p>
+
+                <div className="partnership-partners-grid">
+                  <div className="partner-item-card">
+                    <div className="partner-item-title">Unnat Bharat Abhiyan (UBA)</div>
+                    <p className="partner-item-desc">Flagship programme of the Govt. of India (CWRE–UBA Association)</p>
+                  </div>
+                  <div className="partner-item-card">
+                    <div className="partner-item-title">ISTE</div>
+                    <p className="partner-item-desc">Indian Society for Technical Education - Activity &amp; Financial Support</p>
+                  </div>
+                  <div className="partner-item-card">
+                    <div className="partner-item-title">NSS &amp; CEA</div>
+                    <p className="partner-item-desc">National Service Scheme &amp; Civil Engineering Association</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       {/* Gallery Lightbox Modal */}
       <AnimatePresence>
