@@ -101,7 +101,7 @@ const socialLinks = [
 
 const stats = [
     { number: 15, suffix: '+', label: 'Years of Research' },
-    { number: 200, suffix: '+', label: 'Water Tests Done' },
+    { number: 1500, suffix: '+', label: 'Water Tests Done' },
     { number: 50, suffix: '+', label: 'Publications' },
     { number: 10, suffix: 'K+', label: 'Students Reached' },
 ];
