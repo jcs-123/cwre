@@ -63,15 +63,15 @@ const NavbarComponent = () => {
             <div className="cwre-ticker-strip">
                 <div className="ticker-track">
                     <Link to="/plus-one-plus-two" className="ticker-item-link">
-                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Higher Secondary Students (+1, +2 of Kerala Syllabus , CBSE, ICSE)
+                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Secondary &amp; Higher Secondary Students (10th, +1, +2 of Kerala Syllabus, CBSE, ICSE)
                     </Link>
                     <span className="ticker-pipe">|</span>
                     <Link to="/plus-one-plus-two" className="ticker-item-link">
-                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Higher Secondary Students (+1, +2 of Kerala Syllabus , CBSE, ICSE)
+                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Secondary &amp; Higher Secondary Students (10th, +1, +2 of Kerala Syllabus, CBSE, ICSE)
                     </Link>
                     <span className="ticker-pipe">|</span>
                     <Link to="/plus-one-plus-two" className="ticker-item-link">
-                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Higher Secondary Students (+1, +2 of Kerala Syllabus , CBSE, ICSE)
+                        Clean Kerala Quiz 2.0 : A Statewide Water Quality &amp; Sanitation Challenge For Secondary &amp; Higher Secondary Students (10th, +1, +2 of Kerala Syllabus, CBSE, ICSE)
                     </Link>
                     <span className="ticker-pipe">|</span>
                 </div>
@@ -84,7 +84,7 @@ const NavbarComponent = () => {
                         <Col>
                             <ul className={`cwre-menu ${menuOpen ? 'open' : ''}`}>
                                 <li><NavLink to="/" end onClick={handleLinkClick} className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
-                                <li><NavLink to="/plus-one-plus-two" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active" : ""}>+1 & +2 Competition</NavLink></li>
+                                <li><NavLink to="/plus-one-plus-two" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active" : ""}>10th, +1 & +2 Competition</NavLink></li>
                                 <li><NavLink to="/college" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active" : ""}>College Competition</NavLink></li>
                                 <li><NavLink to="/publications" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active" : ""}>Publications</NavLink></li>
                                 <li><NavLink to="/programmes-and-reports" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active" : ""}>Programmes &amp; Reports</NavLink></li>

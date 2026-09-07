@@ -89,7 +89,7 @@ const exploreLinks = [
     { label: 'Programmes & Reports', to: '/programmes-and-reports' },
     { label: 'Competition', to: '/competition' },
     { label: 'Workshop', to: '/workshop' },
-    { label: '+1, +2 Programme', to: '/plus-one-plus-two' },
+    { label: '10th, +1, +2 Programme', to: '/plus-one-plus-two' },
 ];
 
 const socialLinks = [
