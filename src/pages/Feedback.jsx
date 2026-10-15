@@ -5,12 +5,17 @@ import './Feedback.css';
 
 const feedbackVideos = [
   {
+    title: 'CWRE feedback 1',
+    url: 'https://www.youtube.com/embed/VDfWqHkvxvY',
+  },
+  {
     title: 'CWRE feedback 2',
     url: 'https://www.youtube.com/embed/cjr8hwWGsfw',
   },
   {
-    title: 'CWRE feedback 1',
-    url: 'https://www.youtube.com/embed/VDfWqHkvxvY',
+    title: 'CWRE feedback 3',
+    url: '/downloads/VID-20261015-WA0013.mp4',
+    type: 'video',
   },
 ];
 
@@ -58,12 +63,22 @@ function Feedbacks() {
                 viewport={{ once: true }}
               >
                 <div className="fb-video-frame">
-                  <iframe
-                    src={video.url}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                  {video.type === 'video' || video.url?.endsWith('.mp4') ? (
+                    <video
+                      src={video.url}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      style={{ width: '100%', height: '100%', display: 'block', objectFit: 'contain' }}
+                    />
+                  ) : (
+                    <iframe
+                      src={video.url}
+                      title={video.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  )}
                 </div>
                 <h4 className="fb-video-label">{video.title}</h4>
               </motion.div>

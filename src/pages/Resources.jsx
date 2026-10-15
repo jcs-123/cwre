@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBook, FaFilePowerpoint, FaNewspaper, FaDownload, FaEye } from 'react-icons/fa';
+import { FaBook, FaFilePowerpoint, FaNewspaper, FaDownload, FaEye, FaGlobe, FaExternalLinkAlt } from 'react-icons/fa';
 
 // ===== IMAGE RESOURCES =====
 import terrafilTechnology from '../assets/terrafil_technology__67531.png';
@@ -142,7 +142,7 @@ function Resources() {
           </p>
         </div>
 
-        {/* Tab Switcher: Articles, Books, PPTs */}
+        {/* Tab Switcher: Articles, Books, PPTs, IEC Corner */}
         <div className="resources-filter-bar">
           <button 
             type="button"
@@ -167,6 +167,17 @@ function Resources() {
           >
             <FaFilePowerpoint /> <span>PPTs</span>
           </button>
+
+          <a 
+            href="https://ieccorner.jeccac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="filter-btn filter-btn-external"
+            title="Visit CWRE IEC Corner Portal (Opens in a new tab)"
+          >
+            <FaGlobe /> <span>IEC Corner</span>
+            <FaExternalLinkAlt className="external-link-icon" />
+          </a>
         </div>
 
         {/* Category Header Label */}
